@@ -9,6 +9,11 @@ import userRouter from './routes/user.routes.js'
 import geminiResponce  from './gemini.js'
 
 const app = express()
+
+app.get("/", (req, res) => {
+  res.send("Server is running");
+});
+
 app.use(cors({
     origin:"https://learning-assistant-fi47.onrender.com",
     credentials:true
