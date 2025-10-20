@@ -10,7 +10,7 @@ import geminiResponce  from './gemini.js'
 
 const app = express()
 app.use(cors({
-    origin:"http://localhost:5173",
+    origin:"https://learning-assistant-fi47.onrender.com",
     credentials:true
 }))
 const PORT = process.env.PORT || 5000

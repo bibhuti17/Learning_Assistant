@@ -4,7 +4,7 @@ import axios from 'axios'
 export const UserDataContext = createContext()
 
 const UserContext = ({ children }) => {
-    const serverUrl = "http://localhost:8000"
+    const serverUrl = "https://learning-assistant-backend-server.onrender.com"
     const [userData, setUserData, ] = useState(null)
     const [frontendImage, setFrontendImage] = useState(null)
     const [backendImage, setBackendImage] = useState(null)
